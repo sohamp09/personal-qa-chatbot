@@ -6,6 +6,11 @@ from .schemas import ChatRequest, ChatResponse
 
 app = FastAPI()
 
+origins = [
+    "http://localhost:5173",
+    "https://personal-qa-chatbot-3zsc.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
