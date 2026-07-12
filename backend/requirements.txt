@@ -13,3 +13,10 @@ fastapi
 uvicorn
 requests
 langchain_huggingface
+fastapi
+uvicorn
+python-dotenv
+langchain
+langchain-core
+langchain-mistralai
+pydantic
