@@ -62,7 +62,7 @@
 
 import os
 
-print("MISTRAL_API_KEY exists:", bool(os.getenv("MISTRAL_API_KEY")))
+print("API Key Loaded:", bool(os.getenv("MISTRAL_API_KEY")))
 
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
