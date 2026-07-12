@@ -22,14 +22,20 @@ app.add_middleware(
 
 bot = ChatBot()
 
-@app.post("/chat",response_model=ChatResponse)
-def chat(data : ChatRequest):
-    try:
-        answer = bot.chat(data.message)
-        return ChatResponse(response=answer)
-    except Exception as e:
-        print(traceback.format_exc())  # Shows the full error in Render logs
-        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/chat")
+def chat(data: ChatRequest):
+    return {
+        "response": "Backend is working"
+    }
+# @app.post("/chat",response_model=ChatResponse)
+# def chat(data : ChatRequest):
+#     try:
+#         answer = bot.chat(data.message)
+#         return ChatResponse(response=answer)
+#     except Exception as e:
+#         print(traceback.format_exc())  # Shows the full error in Render logs
+#         raise HTTPException(status_code=500, detail=str(e))
     # answer = bot.chat(data.message)
 
     # return ChatResponse(response=answer)
