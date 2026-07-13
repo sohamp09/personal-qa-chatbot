@@ -7,8 +7,8 @@ function ChatWindow({ messages, loading }) {
           key={index}
           className={`max-w-xl p-3 rounded-lg ${
             msg.role === "user"
-              ? "ml-auto bg-blue-600 text-white"
-              : "mr-auto bg-gray-200"
+              ? "ml-auto bg-gray-600 text-gray-100 font-serif"
+              : "mr-auto bg-yellow-300 text-gray-600 font-serif"
           }`}
         >
           {msg.content}
@@ -16,7 +16,7 @@ function ChatWindow({ messages, loading }) {
       ))}
 
       {loading && (
-        <div className="bg-gray-200 p-3 rounded-lg w-fit">
+        <div className="bg-yellow-200 p-3 rounded-lg w-fit">
           Thinking...
         </div>
       )}

@@ -11,10 +11,10 @@ function ChatInput({ onSend }) {
   };
 
   return (
-    <div className="border-t p-4 bg-white">
+    <div className="border-t p-4 bg-gray-900">
       <div className="flex gap-2">
         <input
-          className="flex-1 border rounded-lg px-4 py-2"
+          className="flex-1 border text-white rounded-lg px-4 py-2"
           placeholder="Ask anything..."
           value={text}
           onChange={(e) => setText(e.target.value)}
@@ -25,7 +25,7 @@ function ChatInput({ onSend }) {
 
         <button
           onClick={handleSend}
-          className="bg-blue-600 text-white px-5 rounded-lg"
+          className="bg-gray-600 active:scale-95 text-yellow-400 px-5 rounded-lg"
         >
           Send
         </button>

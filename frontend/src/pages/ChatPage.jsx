@@ -46,7 +46,7 @@ function ChatPage() {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-gray-100">
+    <div className="h-screen w-screen flex flex-col bg-gray-800">
       <Navbar />
       <ChatWindow messages={messages} loading={loading} />
       <ChatInput onSend={sendMessage} />

@@ -5,3 +5,5 @@ function App() {
 }
 
 export default App;
+
+//run in node .\node_modules\vite\bin\vite.js
